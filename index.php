@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="sv">
     <head>
@@ -58,10 +62,12 @@
                 <div class="links">
                     <ul>
                         <li class="nav-links">
-                            <a href="mobil.html" class="link">PC</a>
+                          
+        <a class="active" href="#home">home</a>
+        
                         </li>
                         <li class="nav-links">
-                            <a href="mobil.html" class="link">Mobile</a>
+                           <a href="#products">products</a> 
                         </li>
                         <li class="nav-links">
                             <a href="mobil.html" class="link">Gaming</a>
@@ -73,7 +79,7 @@
                             <a href="#" class="link">Sound</a>
                         </li>
                         <li class="nav-links">
-                            <a href="#" class="link">About</a>
+                            <a href="#about" class="active" >About</a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +116,8 @@
                 </ul>
                 <button class="btn checkout hidden">Check out</button>
             </div>
-            
+              </nav>
+              <map name="" style="height: 100vh;">
    <span>map</span>
    <h5>GET YOUR NEAREST LOCAL PLACE HERE</h5>
    <p></p>
@@ -118,12 +125,12 @@
 
 include 'map.html';
    ?>
-
-        </nav>
+</map>
+<section class="home" id="home">
         <header id="hearderSlide">
             <div class="MS-content">
                 <a href="detail_page.html" class="item">
-                    <img src="Images/Other/slide1.jpg" />
+                    <img src="e photos/-6291868278661950954_121.jpg" />
                 </a>
                 <a href="#" class="item">
                     <img src="Images/Other/slide2.jpg" />
@@ -132,7 +139,7 @@ include 'map.html';
                     <img src="Images/Other/slide3.jpg" />
                 </a>
                 <a href="detail_page.html" class="item">
-                    <img src="Images/Other/Iphone 12.png" />
+                    <img src="e photos/-6291868278661950959_121.jpg" />
                 </a>
                 <a href="detail_page.html" class="item">
                     <img src="Images/Other/slide5.jpg" />
@@ -147,6 +154,7 @@ include 'map.html';
                 </button>
             </div>
         </header>
+</section>
         <main>
             <section class="main-section">
                 <div class="product-container">
@@ -190,8 +198,8 @@ include 'map.html';
                             <div class="product-under">
                                 <figure class="product-image">
                                     <img
-                                        src="Images/producs-images/Laptops/laptop-2.png"
-                                        alt="popular labtops and computers"
+                                        src="e photos/-5809992176619336915_109.jpg"
+                                        alt="popular "
                                     />
                                     <div class="product-over">
                                         <button
@@ -208,75 +216,31 @@ include 'map.html';
                                         >
                                     </div>
                                 </figure>
+                              
+                                
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 2</h4>
+                                    <span class="stars"></span>
+                               
+                                    <h6 class="price">
+                                        $<span class="priceValue">599</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
                                 <figure class="product-image">
                                     <img
-                                        src="Images/producs-images/Laptops/laptop-2.png"
-                                        alt="popular labtops and computers"
+                                    <img
+                                        src="e photos/-5809992176619336915_109.jpg"
+                                        alt="popular "
+                                    />
                                     />
                                     <div class="product-over">
                                         <button
                                             class="btn btn-small addToCart"
-                                            data-product-id="2"
-                                        >
-                                            <i class="fas fa-cart-plus"></i>Add
-                                            to cart
-                                        </button>
-                                        <a
-                                            href="detail_page.html"
-                                            class="btn btn-small"
-                                            >More Info</a
-                                        >
-                                    </div>
-                                </figure>
-                                <figure class="product-image">
-                                    <img
-                                        src="Images/producs-images/Laptops/laptop-2.png"
-                                        alt="popular labtops and computers"
-                                    />
-                                    <div class="product-over">
-                                        <button
-                                            class="btn btn-small addToCart"
-                                            data-product-id="2"
-                                        >
-                                            <i class="fas fa-cart-plus"></i>Add
-                                            to cart
-                                        </button>
-                                        <a
-                                            href="detail_page.html"
-                                            class="btn btn-small"
-                                            >More Info</a
-                                        >
-                                    </div>
-                                </figure>
-                                <figure class="product-image">
-                                    <img
-                                        src="Images/producs-images/Laptops/laptop-2.png"
-                                        alt="popular labtops and computers"
-                                    />
-                                    <div class="product-over">
-                                        <button
-                                            class="btn btn-small addToCart"
-                                            data-product-id="2"
-                                        >
-                                            <i class="fas fa-cart-plus"></i>Add
-                                            to cart
-                                        </button>
-                                        <a
-                                            href="detail_page.html"
-                                            class="btn btn-small"
-                                            >More Info</a
-                                        >
-                                    </div>
-                                </figure>
-                                <figure class="product-image">
-                                    <img
-                                        src="Images/producs-images/Laptops/laptop-2.png"
-                                        alt="popular labtops and computers"
-                                    />
-                                    <div class="product-over">
-                                        <button
-                                            class="btn btn-small addToCart"
-                                            data-product-id="2"
+                                            data-product-id="3"
                                         >
                                             <i class="fas fa-cart-plus"></i>Add
                                             to cart
@@ -289,11 +253,113 @@ include 'map.html';
                                     </div>
                                 </figure>
                                 <div class="product-summary">
-                                    <h4 class="productName">Product 2</h4>
+                                    <h4 class="productName">Product 3</h4>
                                     <span class="stars"></span>
-                               
+                              
                                     <h6 class="price">
-                                        $<span class="priceValue">599</span>
+                                        $<span class="priceValue">650</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                    <img
+                                        src="e photos/-5809684983378457420_121.jpg"
+                                        alt="popular "
+                                    />
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 3</h4>
+                                    <span class="stars"></span>
+                              
+                                    <h6 class="price">
+                                        $<span class="priceValue">650</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                    <img
+                                        src="e photos/-6019452852562408454_121.jpg"
+                                        alt="popular "
+                                    />
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 3</h4>
+                                    <span class="stars"></span>
+                              
+                                    <h6 class="price">
+                                        $<span class="priceValue">650</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                    <img
+                                        src="e photos/-5857007384017351249_109.jpg"
+                                        alt="popular "
+                                    />
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 5</h4>
+                                    <span class="stars"></span>
+                              
+                                    <h6 class="price">
+                                        $<span class="priceValue">650</span>
                                     </h6>
                                 </div>
                             </div>
@@ -321,7 +387,7 @@ include 'map.html';
                                     </div>
                                 </figure>
                                 <div class="product-summary">
-                                    <h4 class="productName">Product 3</h4>
+                                    <h4 class="productName">Product 4</h4>
                                     <span class="stars"></span>
                               
                                     <h6 class="price">
@@ -578,8 +644,9 @@ include 'map.html';
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section >
         </main>
+        <section class="about" id="about">
         <div class="icons-container">
                 <div class="icons">
                     <i class="fas fa-shipping-fast"></i>
@@ -632,7 +699,7 @@ include 'map.html';
                     <p><i class="fab fa-cc-amex"></i></p>
                 </li>
             </ul>
-        </footer>
+        </footer></section>
         <script src="JS/script.js"></script>
         <script src="shopping-cart.js"></script>
     </body>
