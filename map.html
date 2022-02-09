@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+ 
+    <!-- jsFiddle will insert css and js -->
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js"></script>  <style>
+  
+  
+  #myInput {
+    background-image:
+    url('/img/search.png');
+  
+    background-position: 5px 10px;
+    background-size:40px;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+ 
+  
+  </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="map"></div>
+      <div id="sidebar">
+        <h2>Results</h2>
+    
+  <input type="text" id="myInput"
+  onkeyup="myFunction()" placeholder=
+  "Search by name...."
+  
+  title="Type in a name">
+  <ul id="places"></ul>
+
+        <button id="more">Load more results</button>
+      </div>
+    </div>
+ <div
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=places&v=weekly&map_ids=8d193001f940fde3&channel=2"
+      async
+  ></script>
+ 
+
+  
+  <script>
+  
+  function myFunction() {
+  var input, filter, place,i;
+  input=document.getElementById("myInput");
+  
+  filter=input.value.toUpperCase();
+  
+  ul=document.getElementById("place");
+  
+  ul=ul.getElementsByTagName("ul");
+  
+  for (i = 0; i < ul.length; i++) {
+  ul= ul[i].getElementsByTagName("ul")[0];
+  
+   if (ul) {
+     if (ul.innerHTML.toUpperCase()
+     .indexOf(filter) > -1) {
+  
+       ul[i].style.display = "";
+        } else {
+          ul[i].style.display = "none";
+  
+        }
+      }
+    }
+  }
+  
+  </script>
+  
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="search-field">
+ 
+   
+  plcase name;<input type="text" name="places" id="places"><br><br>
+ </div>
+    <script>
+    
+      var table = document.getElementById('places');
+      
+      for(var i = 1; i < table.rows.length; i++)
+      {
+          table.rows[i].onclick = function()
+          {
+               //rIndex = this.rowIndex;
+               document.getElementById("places").value = this.cells[0].innerHTML;
+           
+          };
+      }
+
+</script>  -->
+  </body> 
+</html>           
